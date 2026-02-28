@@ -1,0 +1,39 @@
+version: "2"
+
+linters:
+    enable:
+        - loglinter
+    settings:
+        custom:
+            loglinter:
+                type: "module"
+                description: log linter.
+                settings:
+                    rules:
+                        lowercase:
+                            enabled: true
+                        english_only:
+                            enabled: true
+                        no_special_chars:
+                            enabled: true
+                        sensitive_words:
+                            enabled: true
+                            words:
+                                - password
+                                - passwd
+                                - secret
+                                - token
+                                - api_key
+                                - apikey
+                                - auth
+                                - credential
+                                - private_key
+                                - access_token
+                                - refresh_token
+                                - bearer
+                                - secret_key
+                                - encryption_key
+                        custom_patterns:
+                            enabled: false
+                            patterns:
+                                - "secret info"
