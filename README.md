@@ -56,6 +56,9 @@ linters:
 ## Проект для теста
 находится в `/example-project` и в `/zap-project`
 
+## SuggestedFixes
+Реализованы для заглавной буквы и специальных символов
+
 ## Анализ проекта
 В проект [grafana](https://github.com/grafana/grafana) линтер не нашел проблем
 
